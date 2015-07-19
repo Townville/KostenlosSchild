@@ -1,0 +1,13 @@
+Config:
+   prefix: '[Kostenlos]'
+   noperm: '&cDu hast dazu keine Berechtigung'
+   missingid: '&cDu hast keine ID angegeben'
+   missingnumber: '&cDu hast keine Anzahl angegeben'
+   error: '&cEin Fehler ist aufgetreten. Bitte den Entwickler kontaktieren.'
+   time1: '&cDu musst noch'
+   time2: '&cSekunden warten'
+   configrl: '&cConfig erfolgreich neu geladen.'
+   invname: "Kostenlos"
+   sek: 5
+   
+   

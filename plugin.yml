@@ -1,0 +1,8 @@
+name: KostenlosSchild
+version: 1.1
+author: LoganBwDE
+main: me.loganbwde.KostenlosSchild.main
+commands:
+     ksreload:
+          description: Reloadet die Config
+          usage: </command>
