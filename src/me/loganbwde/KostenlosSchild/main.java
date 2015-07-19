@@ -191,7 +191,7 @@ public class main extends JavaPlugin implements Listener
 		 zahl = sec;
 	 }
 	 public void loadConfig()
-        {
+         {
 		getConfig().options().copyDefaults(true);
 		saveConfig();
 	 }
