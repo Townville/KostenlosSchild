@@ -105,9 +105,9 @@ public class main extends JavaPlugin implements Listener
 	       nnumber = Integer.parseInt(number);
 	       ItemStack stack = new ItemStack(nid);
 	       mat  = stack.getType();
-	       event.setLine(0, "§b" + prefix);
-	       event.setLine(1, "§c" + mat);
-	       event.setLine(2, number + "§bx");
+	       event.setLine(0, "Â§b" + prefix);
+	       event.setLine(1, "Â§c" + mat);
+	       event.setLine(2, number + "Â§bx");
 	       schild.update(true);
 	   }
 	 }
@@ -118,7 +118,7 @@ public class main extends JavaPlugin implements Listener
 	    if ((event.getAction() == Action.RIGHT_CLICK_BLOCK) && (event.getClickedBlock().getState() instanceof Sign))
 	    {
 	      Sign schild = (Sign)event.getClickedBlock().getState();
-	      if (schild.getLine(0).equalsIgnoreCase("§b" + prefix)) {
+	      if (schild.getLine(0).equalsIgnoreCase("Â§b" + prefix)) {
 	        try
 	        {
 	          if (!p.hasPermission("KostenlosSchild.use"))
@@ -146,7 +146,7 @@ public class main extends JavaPlugin implements Listener
     @SuppressWarnings("deprecation")
 	 public Inventory createInventory(int id,int number)
 	 {
-	    Inventory invent = Bukkit.createInventory(null, 9,"§b" + invname);
+	    Inventory invent = Bukkit.createInventory(null, 9,"Â§b" + invname);
 	    for (int i = 0; i < invent.getSize(); i++) 
 	    {
 	    	invent.setItem(4, new ItemStack(id, number));
@@ -176,7 +176,7 @@ public class main extends JavaPlugin implements Listener
 	 @EventHandler
 	 public void close(InventoryCloseEvent e)
 	 {
-		 if(e.getInventory().getName().equals("§b" + invname))
+		 if(e.getInventory().getName().equals("Â§b" + invname))
 		 {
 			 Players.add(name);
        	  	 startCountdown();
@@ -191,7 +191,7 @@ public class main extends JavaPlugin implements Listener
 		 zahl = sec;
 	 }
 	 public void loadConfig()
-     {
+        {
 		getConfig().options().copyDefaults(true);
 		saveConfig();
 	 }
